@@ -42,7 +42,9 @@ const forecast = (latitude, longitude, callback) => {
         body.current.weather_descriptions[0] +
           '. It is currently ' +
           body.current.temperature +
-          ' degrees out. It feels like ' +
+          ' degrees out. Humidity is ' +
+          body.current.humidity +
+          '%. It feels like ' +
           body.current.feelslike +
           ' degrees out.'
       );
